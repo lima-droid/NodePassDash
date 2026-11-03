@@ -166,6 +166,8 @@ jobs:
 
   docker:
     needs: [sync, release]
+    # release 失败（例如该版本 Release 已存在）时也照样重推镜像
+    if: always() && needs.sync.outputs.need_release == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -173,6 +175,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ needs.sync.outputs.tag }}
+
+      # 前端产物与 CPU 架构无关：让 frontend-builder 跑在构建机原生架构上，
+      # 否则 arm64 下 pnpm/vite 会在 QEMU 里非法指令崩溃。只改本次构建上下文，不提交。
+      - name: Patch Dockerfile for cross-arch frontend build
+        run: |
+          sed -i 's|^FROM node:20-alpine AS frontend-builder|FROM --platform=$BUILDPLATFORM node:20-alpine AS frontend-builder|' Dockerfile
+          grep -n "^FROM" Dockerfile
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
