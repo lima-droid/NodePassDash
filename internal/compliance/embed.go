@@ -30,7 +30,7 @@ const (
 	LangZhCN = "zh-CN"
 	LangEnUS = "en-US"
 
-	repoRawBase = "https://github.com/NodePassProject/NodePassDash/blob/main/internal/compliance"
+	repoRawBase = "https://github.com/lima-droid/NodePassDash/blob/main/internal/compliance"
 )
 
 // versionLineRe 匹配以下任一头部行:

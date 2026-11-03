@@ -21,7 +21,7 @@ mkdir -p db logs
 ```yaml
 services:
   nodepassdash:
-    image: ghcr.io/nodepassproject/nodepassdash:latest
+    image: ghcr.io/lima-droid/nodepassdash:latest
     container_name: nodepassdash
     ports:
       - "3000:3000"
@@ -88,7 +88,7 @@ Docker 中可挂载证书并通过 `command:` 传参：
 ```yaml
 services:
   nodepassdash:
-    image: ghcr.io/nodepassproject/nodepassdash:latest
+    image: ghcr.io/lima-droid/nodepassdash:latest
     ports: ["443:443"]
     volumes:
       - ./db:/app/db
@@ -119,7 +119,7 @@ services:
 ```yaml
 services:
   nodepassdash:
-    image: ghcr.io/nodepassproject/nodepassdash:latest
+    image: ghcr.io/lima-droid/nodepassdash:latest
     environment:
       - DISABLE_SSE_LOG=true
     # 或者使用 command

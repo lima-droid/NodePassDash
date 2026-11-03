@@ -15,7 +15,7 @@
 ### 3. 拉取最新镜像
 
 ```bash
-docker pull ghcr.io/nodepassproject/nodepassdash:latest
+docker pull ghcr.io/lima-droid/nodepassdash:latest
 ```
 
 ### 4. 重启容器
@@ -57,6 +57,6 @@ A: 可以，但需要使用升级前备份的数据。建议在升级前做好�
 
 如果在迁移过程中遇到问题，请：
 
-- 查看 [GitHub Issues](https://github.com/NodePassProject/NodePassDash/issues)
+- 查看 [GitHub Issues](https://github.com/lima-droid/NodePassDash/issues)
 - 加入 [Telegram 群组](https://t.me/NodePassGroup) 寻求帮助
 - 关注 [Telegram 频道](https://t.me/NodePassChannel) 获取最新信息
