@@ -1285,7 +1285,7 @@ function StackRow({
 // IPv6 不通时的精简提示：只一句根据部署方式变化的诊断 + docker 场景的
 // 官方 compose 外链，避免在窄侧边卡里塞大段代码。
 const IPV6_COMPOSE_URL =
-  "https://github.com/NodePassProject/NodePassDash/blob/main/docker-compose-v6-create.yml";
+  "https://github.com/lima-droid/NodePassDash/blob/main/docker-compose-v6-create.yml";
 
 function IPv6DockerHint({ deployment }: { deployment?: string }) {
   const { t } = useTranslation("db-setup");

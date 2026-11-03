@@ -183,7 +183,7 @@ export function SidebarLayout({ children }: SidebarLayoutProps) {
                 key: "github",
                 label: "GitHub",
                 icon: "mdi:github",
-                href: "https://github.com/NodePassProject/NodePassDash",
+                href: "https://github.com/lima-droid/NodePassDash",
               },
               {
                 key: "telegram",

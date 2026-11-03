@@ -11,7 +11,7 @@ const socialLinks = [
     key: "github",
     label: "Github",
     icon: "mdi:github",
-    href: "https://github.com/NodePassProject/NodePassDash",
+    href: "https://github.com/lima-droid/NodePassDash",
     target: "_blank",
   },
   {

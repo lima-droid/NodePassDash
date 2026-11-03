@@ -70,7 +70,7 @@ BSD-3-Clause，见 `LICENSE`。
 
 ## 📞 支持
 
-- 🐛 问题报告: https://github.com/NodePassProject/NodePassDash/issues
+- 🐛 问题报告: https://github.com/lima-droid/NodePassDash/issues
 
 ## 🤝 Sponsors
 

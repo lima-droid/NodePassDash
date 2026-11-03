@@ -164,7 +164,7 @@ release:
 
     ### 🐳 Docker Image
     ```bash
-    docker pull ghcr.io/nodepassproject/nodepassdash:{{ .Version }}
+    docker pull ghcr.io/lima-droid/nodepassdash:{{ .Version }}
     ```
 
     ### 🔧 Usage

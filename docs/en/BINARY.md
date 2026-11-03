@@ -12,13 +12,13 @@ This guide deploys NodePassDash as a native binary on a server (recommended for 
 NodePassDash provides an installation script in this repo: `scripts/install.sh`.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/NodePassProject/NodePassDash/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/lima-droid/NodePassDash/main/scripts/install.sh | bash
 ```
 
 If you prefer to inspect it first:
 
 ```bash
-wget https://raw.githubusercontent.com/NodePassProject/NodePassDash/main/scripts/install.sh
+wget https://raw.githubusercontent.com/lima-droid/NodePassDash/main/scripts/install.sh
 chmod +x install.sh
 ./install.sh
 ```

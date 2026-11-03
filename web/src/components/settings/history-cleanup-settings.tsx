@@ -90,9 +90,9 @@ const DEFAULT_CONFIG: HistoryCleanupConfig = {
 const SQLITE_COMPACTION_THRESHOLD_BYTES = 256 * 1024 * 1024;
 const SQLITE_MAINTENANCE_DOCS = {
   "zh-CN":
-    "https://github.com/NodePassProject/NodePassDash/blob/main/docs/zh-CN/SQLITE-MAINTENANCE.md",
+    "https://github.com/lima-droid/NodePassDash/blob/main/docs/zh-CN/SQLITE-MAINTENANCE.md",
   "en-US":
-    "https://github.com/NodePassProject/NodePassDash/blob/main/docs/en/SQLITE-MAINTENANCE.md",
+    "https://github.com/lima-droid/NodePassDash/blob/main/docs/en/SQLITE-MAINTENANCE.md",
 } as const;
 
 const toEditableConfig = (
